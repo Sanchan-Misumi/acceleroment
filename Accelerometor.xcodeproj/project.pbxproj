@@ -14,6 +14,10 @@
 		EE82419D20C0C46F0065C6BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE82419B20C0C46F0065C6BE /* LaunchScreen.storyboard */; };
 		EE8241A820C0C46F0065C6BE /* AccelerometorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8241A720C0C46F0065C6BE /* AccelerometorTests.swift */; };
 		EE8241B320C0C46F0065C6BE /* AccelerometorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8241B220C0C46F0065C6BE /* AccelerometorUITests.swift */; };
+		EE8241C320C0C4EB0065C6BE /* awa.png in Resources */ = {isa = PBXBuildFile; fileRef = EE8241C120C0C4EB0065C6BE /* awa.png */; };
+		EE8241C420C0C4EB0065C6BE /* suiheiki.png in Resources */ = {isa = PBXBuildFile; fileRef = EE8241C220C0C4EB0065C6BE /* suiheiki.png */; };
+		EE8241C620C0C5FB0065C6BE /* MeasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8241C520C0C5FB0065C6BE /* MeasureViewController.swift */; };
+		EE8241C820C0C60A0065C6BE /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8241C720C0C60A0065C6BE /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		EE8241AE20C0C46F0065C6BE /* AccelerometorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelerometorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE8241B220C0C46F0065C6BE /* AccelerometorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometorUITests.swift; sourceTree = "<group>"; };
 		EE8241B420C0C46F0065C6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8241C120C0C4EB0065C6BE /* awa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awa.png; sourceTree = "<group>"; };
+		EE8241C220C0C4EB0065C6BE /* suiheiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suiheiki.png; sourceTree = "<group>"; };
+		EE8241C520C0C5FB0065C6BE /* MeasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewController.swift; sourceTree = "<group>"; };
+		EE8241C720C0C60A0065C6BE /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultViewController.swift; path = Accelerometor/ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		EE82418620C0C46F0065C6BE = {
 			isa = PBXGroup;
 			children = (
+				EE8241C720C0C60A0065C6BE /* ResultViewController.swift */,
+				EE8241C520C0C5FB0065C6BE /* MeasureViewController.swift */,
 				EE82419120C0C46F0065C6BE /* Accelerometor */,
 				EE8241A620C0C46F0065C6BE /* AccelerometorTests */,
 				EE8241B120C0C46F0065C6BE /* AccelerometorUITests */,
@@ -97,6 +107,7 @@
 		EE82419120C0C46F0065C6BE /* Accelerometor */ = {
 			isa = PBXGroup;
 			children = (
+				EE8241C020C0C4EB0065C6BE /* 13_Resource */,
 				EE82419220C0C46F0065C6BE /* AppDelegate.swift */,
 				EE82419420C0C46F0065C6BE /* ViewController.swift */,
 				EE82419620C0C46F0065C6BE /* Main.storyboard */,
@@ -123,6 +134,15 @@
 				EE8241B420C0C46F0065C6BE /* Info.plist */,
 			);
 			path = AccelerometorUITests;
+			sourceTree = "<group>";
+		};
+		EE8241C020C0C4EB0065C6BE /* 13_Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EE8241C120C0C4EB0065C6BE /* awa.png */,
+				EE8241C220C0C4EB0065C6BE /* suiheiki.png */,
+			);
+			path = 13_Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +254,9 @@
 			files = (
 				EE82419D20C0C46F0065C6BE /* LaunchScreen.storyboard in Resources */,
 				EE82419A20C0C46F0065C6BE /* Assets.xcassets in Resources */,
+				EE8241C420C0C4EB0065C6BE /* suiheiki.png in Resources */,
 				EE82419820C0C46F0065C6BE /* Main.storyboard in Resources */,
+				EE8241C320C0C4EB0065C6BE /* awa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8241C620C0C5FB0065C6BE /* MeasureViewController.swift in Sources */,
 				EE82419520C0C46F0065C6BE /* ViewController.swift in Sources */,
 				EE82419320C0C46F0065C6BE /* AppDelegate.swift in Sources */,
+				EE8241C820C0C60A0065C6BE /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,12 +451,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TV84SER6Y3;
 				INFOPLIST_FILE = Accelerometor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maho.com.Accelerometor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,12 +466,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TV84SER6Y3;
 				INFOPLIST_FILE = Accelerometor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maho.com.Accelerometor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
